@@ -1,6 +1,5 @@
-# Make things pretty
+# Make things pretty(ish)
    nitrogen --restore &
-   xscreensaver -no-splash &
 
 # Keyboard settings
    setxkbmap -option ctrl:nocaps
@@ -18,7 +17,7 @@
    /usr/bin/lxqt-backlight_backend &
 
 # power management (monitor): standby, suspend, sleep in seconds
-   xset dpms 3600 4800 7200
+   xset dpms 300 600 1800
 
 # Window manager
   /usr/bin/openbox
