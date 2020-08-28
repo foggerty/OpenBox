@@ -18,7 +18,7 @@
    /usr/bin/lxqt-backlight_backend &
 
 # power management (monitor): standby, suspend, sleep in seconds
-   xset dpms 300 3600 4800
+   xset dpms 3600 4800 7200
 
 # Window manager
   /usr/bin/openbox
