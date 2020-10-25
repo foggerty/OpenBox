@@ -53,6 +53,11 @@
 	     <execute>steam</execute>
       </action>
     </item>
+    <item label="PCManFM">
+      <action name="Execute">
+	     <execute>pcmanfm</execute>
+      </action>
+    </item>
     <separator />
     <menu id="system-menu"/>
   </menu>
