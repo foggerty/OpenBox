@@ -20,12 +20,12 @@
     <focusDelay>100</focusDelay>
     <!-- when followMouse is enabled, the mouse must be inside the window for
        this many milliseconds (1000 = 1 sec) before moving focus to it -->
-    <raiseOnFocus>no</raiseOnFocus>
+    <raiseOnFocus>yes</raiseOnFocus>
     <!-- when followMouse is enabled, and a window is given focus by moving the
        mouse into it, also raise the window -->
   </focus>
   <placement>
-    <policy>Smart</policy>
+    <policy>UnderMouse</policy>
     <!-- 'Smart' or 'UnderMouse' -->
     <center>yes</center>
     <!-- whether to place windows in the center of the free area found or
@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Mikachu</name>
+    <name>Clearlooks-3.4</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -123,10 +123,10 @@
     <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
-      <!-- set names up here if you want to, like this:
-    <name>desktop 1</name>
-    <name>desktop 2</name>
-    -->
+      <name>1</name>
+      <name>2</name>
+      <name>3</name>
+      <name>4</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -154,7 +154,7 @@
      cases. -->
   <margins>
     <top>10</top>
-    <bottom>10</bottom>
+    <bottom>50</bottom>
     <left>10</left>
     <right>10</right>
   </margins>
@@ -227,22 +227,22 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="W-F1">
+    <keybind key="W-1">
       <action name="GoToDesktop">
         <to>1</to>
       </action>
     </keybind>
-    <keybind key="W-F2">
+    <keybind key="W-2">
       <action name="GoToDesktop">
         <to>2</to>
       </action>
     </keybind>
-    <keybind key="W-F3">
+    <keybind key="W-3">
       <action name="GoToDesktop">
         <to>3</to>
       </action>
     </keybind>
-    <keybind key="W-F4">
+    <keybind key="W-4">
       <action name="GoToDesktop">
         <to>4</to>
       </action>
@@ -251,7 +251,7 @@
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="A-F4">
+    <keybind key="W-w">
       <action name="Close"/>
     </keybind>
     <keybind key="A-Escape">
@@ -316,15 +316,20 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-e">
+    <keybind key="W-space">
       <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Konqueror</name>
-        </startupnotify>
-        <command>kfmclient openProfile filemanagement</command>
+        <!-- <startupnotify> -->
+        <!--   <enabled>true</enabled> -->
+        <!--   <name>Konqueror</name> -->
+        <!-- </startupnotify> -->
+        <command>rofi -show-icons -show run</command>
       </action>
     </keybind>
+    <keybind key="W-Return">
+      <action name="execute">
+        <command>sakura</command>
+      </action>>
+    </keybind>>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
@@ -398,7 +403,7 @@
         <action name="Move"/>
       </mousebind>
       <mousebind button="Left" action="DoubleClick">
-        <action name="ToggleMaximize"/>
+        <action name="ToggleShade"/>
       </mousebind>
       <mousebind button="Up" action="Click">
         <action name="if">
