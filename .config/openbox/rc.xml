@@ -295,22 +295,22 @@
       </action>
     </keybind>
     <!-- Keybindings for window switching with the arrow keys -->
-    <keybind key="W-S-Right">
+    <keybind key="W-Right">
       <action name="DirectionalCycleWindows">
         <direction>right</direction>
       </action>
     </keybind>
-    <keybind key="W-S-Left">
+    <keybind key="W-Left">
       <action name="DirectionalCycleWindows">
         <direction>left</direction>
       </action>
     </keybind>
-    <keybind key="W-S-Up">
+    <keybind key="W-Up">
       <action name="DirectionalCycleWindows">
         <direction>up</direction>
       </action>
     </keybind>
-    <keybind key="W-S-Down">
+    <keybind key="W-Down">
       <action name="DirectionalCycleWindows">
         <direction>down</direction>
       </action>
@@ -351,7 +351,7 @@
       <mousebind button="A-Left" action="Click">
         <action name="Unshade"/>
       </mousebind>
-      <mousebind button="A-Left" action="Drag">
+      <mousebind button="W-Left" action="Drag">
         <action name="Move"/>
       </mousebind>
       <mousebind button="A-Right" action="Press">
@@ -359,7 +359,7 @@
         <action name="Raise"/>
         <action name="Unshade"/>
       </mousebind>
-      <mousebind button="A-Right" action="Drag">
+      <mousebind button="W-Right" action="Drag">
         <action name="Resize"/>
       </mousebind>
       <mousebind button="A-Middle" action="Press">
