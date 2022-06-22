@@ -30,8 +30,7 @@ volumeicon &
 
 
 # Compositor.
-picom -bc --experimental-backends
-
+picom -bc --experimental-backends --blur-method dual_kawase
 
 # Notifications daemon
 /usr/lib64/xfce4/notifyd/xfce4-notifyd &
