@@ -35,7 +35,7 @@
     </item>
     <item label="Emacs">
       <action name="Execute">
-	     <execute>emacsclient -c</execute>
+	     <execute>sakura -x "/home/matt/bin/terminal-emacs"</execute>
       </action>
     </item>
     <item label="VSCode">
