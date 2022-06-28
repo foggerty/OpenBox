@@ -1,11 +1,11 @@
 # Make things pretty(ish).
-nitrogen --restore &
+wal -i ~/Pictures/Wallpapers/current -b 000000 &
 xscreensaver -no-splash &
 
 
 # Power management (monitor): standby, suspend, sleep in seconds.
 # Note, if xscreensaver is running it can take over power-management.
-xset dpms 300 600 1800
+#xset dpms 300 600 1800
 
 
 # Keyboard settings.
