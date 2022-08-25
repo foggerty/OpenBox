@@ -30,12 +30,12 @@
   <menu id="root-menu" label="Openbox 3">
     <item label="Terminal">
       <action name="Execute">
-	     <execute>sakura</execute>
+	     <execute>kitty</execute>
       </action>
     </item>
     <item label="Emacs">
       <action name="Execute">
-	     <execute>alacritty -e bash -i -c em</execute>
+	     <execute>emacsclient -c</execute>
       </action>
     </item>
     <item label="VSCode">

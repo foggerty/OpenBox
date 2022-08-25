@@ -1,11 +1,14 @@
 # Make things pretty(ish).
-wal -i ~/Pictures/Wallpapers/current -b 000000 &
-xscreensaver -no-splash &
+wal -c
+wal -i ~/Pictures/current
+nitrogen --restore
+#xscreensaver -no-splash & Found the reason CTRl kept getting mapped
+#back to CTRL.
 
 
 # Power management (monitor): standby, suspend, sleep in seconds.
 # Note, if xscreensaver is running it can take over power-management.
-#xset dpms 300 600 1800
+xset dpms 300 600 1800
 
 
 # Keyboard settings.
@@ -31,6 +34,7 @@ volumeicon &
 
 # Compositor.
 picom -bc --experimental-backends --blur-method dual_kawase &
+
 
 # Notifications daemon
 /usr/lib64/xfce4/notifyd/xfce4-notifyd &
