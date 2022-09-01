@@ -38,9 +38,9 @@
 	     <execute>emacsclient -c</execute>
       </action>
     </item>
-    <item label="VSCode">
+    <item label="Rider IDE">
       <action name="Execute">
-	     <execute>code</execute>
+	     <execute>gtk-launch jetbrains-rider.desktop</execute>
       </action>
     </item>
     <item label="Firefox">

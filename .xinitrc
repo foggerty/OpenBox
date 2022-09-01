@@ -1,14 +1,12 @@
 # Make things pretty(ish).
 wal -c
 wal -i ~/Pictures/current
-nitrogen --restore
-#xscreensaver -no-splash & Found the reason CTRl kept getting mapped
-#back to CTRL.
+xscreensaver -no-splash &
 
 
 # Power management (monitor): standby, suspend, sleep in seconds.
 # Note, if xscreensaver is running it can take over power-management.
-xset dpms 300 600 1800
+#xset dpms 300 600 1800
 
 
 # Keyboard settings.
