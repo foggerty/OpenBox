@@ -1,6 +1,6 @@
 # Make things pretty(ish).
 wal -c
-wal -i ~/Pictures/current
+wal -i ~/Pictures/Wallpapers/current
 xscreensaver -no-splash &
 
 
