@@ -30,7 +30,7 @@
   <menu id="root-menu" label="Openbox 3">
     <item label="Terminal">
       <action name="Execute">
-	     <execute>kitty</execute>
+	     <execute>sakura</execute>
       </action>
     </item>
     <item label="Emacs">
